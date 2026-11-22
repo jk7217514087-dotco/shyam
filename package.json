@@ -1,0 +1,28 @@
+{
+  "name": "smartbin-ai-system",
+  "version": "1.0.0",
+  "description": "SmartBin AI — AI-Powered Smart Waste Management System",
+  "scripts": {
+    "dev": "npm run start:services",
+    "start:services": "node start-services.js",
+    "start:client": "npm run dev --prefix client",
+    "start:server": "npm run dev --prefix server",
+    "start:ai": "python ai-service/app/main.py",
+    "test:client": "npm run test --prefix client",
+    "test:server": "npm run test --prefix server",
+    "test": "npm run test:client && npm run test:server",
+    "build:client": "npm run build --prefix client"
+  },
+  "keywords": [
+    "waste-management",
+    "ai",
+    "computer-vision",
+    "smart-city",
+    "react",
+    "express",
+    "fastapi",
+    "mongodb"
+  ],
+  "author": "SmartBin AI Engineering Team",
+  "license": "MIT"
+}
